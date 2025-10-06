@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GestuEdu - Calificaciones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">GestuEdu</div>
+    <nav>
+      <button>Inicio</button>
+      <button>Módulos</button>
+      <button>Conócenos</button>
+      <button>Contacto</button>
+    </nav>
+    <div class="user-info">
+      <span>Juanita Pérez</span>
+      <a href="#">Cerrar sesión</a>
+    </div>
+  </header>
+
+  <!-- Consulta de calificaciones -->
+  <main>
+    <h2>Consulta de calificaciones</h2>
+    <div class="selector">
+      <label for="periodo">Selector de período</label>
+      <select id="periodo">
+        <option>2025 - Periodo 1</option>
+        <option>2025 - Periodo 2</option>
+      </select>
+    </div>
+
+    <section class="info-estudiante">
+      <p><strong>Año:</strong> 2025</p>
+      <p><strong>Periodo:</strong> 1</p>
+      <p><strong>Estudiante:</strong> Ana Juliana López Pérez</p>
+      <p><strong>Promedio general:</strong> <span id="promedio">3.4</span></p>
+    </section>
+
+    <!-- Tabla -->
+    <table>
+      <thead>
+        <tr>
+          <th>Asignatura</th>
+          <th>Nota</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Matemáticas</td>
+          <td>4.5</td>
+          <td class="aprobado">Aprobado</td>
+        </tr>
+        <tr>
+          <td>Ciencias Naturales</td>
+          <td>3.2</td>
+          <td class="riesgo">En riesgo</td>
+        </tr>
+        <tr>
+          <td>Lengua Castellana</td>
+          <td>2.4</td>
+          <td class="bajo">Bajo rendimiento</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Gráfico de desempeño -->
+    <section class="grafico">
+      <h3>Desempeño académico</h3>
+      <canvas id="gauge" width="300" height="180" style="border:1px solid #ccc"></canvas>
+      <p>El nivel actual es <strong>Básico</strong></p>
+    </section>
+
+    <!-- Resumen -->
+    <section class="resumen">
+      <h3>Resumen de rendimiento del periodo</h3>
+      <p>Promedio general: 3.4</p>
+      <p>Nivel de desempeño: Básico</p>
+      <a href="#">Ver gráfico comparativo de periodos</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
